@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Have a Great Day</title>
+<title>HBD Siri</title>
 
 <style>
 * {
@@ -26,51 +26,30 @@ body {
     align-items: center;
 }
 
-/* ==============================
-   MAIN HEART
-   ============================== */
-
 #heart {
     position: relative;
-
     width: 450px;
     height: 450px;
-
     max-width: 90vw;
     max-height: 90vw;
-
     overflow: visible;
 }
 
-/* ==============================
-   EVERY LOVE WORD
-   ============================== */
-
 .love {
     position: absolute;
-
     left: 50%;
     top: 50%;
-
     width: 450px;
     height: 450px;
-
     margin-left: -225px;
     margin-top: -225px;
-
     pointer-events: none;
 }
 
-/* ==============================
-   HORIZONTAL MOVEMENT
-   ============================== */
-
 .love-horizontal {
     position: absolute;
-
     left: 0;
     top: 0;
-
     width: 100%;
     height: 100%;
 
@@ -82,16 +61,10 @@ body {
         ease-in-out;
 }
 
-/* ==============================
-   VERTICAL MOVEMENT
-   ============================== */
-
 .love-vertical {
     position: absolute;
-
     left: 0;
     top: 0;
-
     width: 100%;
     height: 100%;
 
@@ -102,13 +75,8 @@ body {
         linear;
 }
 
-/* ==============================
-   TEXT
-   ============================== */
-
 .love-word {
     position: absolute;
-
     left: 0;
     top: 0;
 
@@ -119,11 +87,9 @@ body {
         sans-serif;
 
     font-size: 12px;
-
     font-weight: 400;
 
     white-space: nowrap;
-
     letter-spacing: 1px;
 
     transform:
@@ -138,10 +104,6 @@ body {
     user-select: none;
 }
 
-/* ==============================
-   HORIZONTAL MOTION
-   ============================== */
-
 @keyframes moveHorizontal {
 
     from {
@@ -152,10 +114,6 @@ body {
         transform: translateX(450px);
     }
 }
-
-/* ==============================
-   VERTICAL HEART MOTION
-   ============================== */
 
 @keyframes moveVertical {
 
@@ -244,10 +202,6 @@ body {
     }
 }
 
-/* ==============================
-   MOBILE SIZE
-   ============================== */
-
 @media (max-width: 600px) {
 
     #heart {
@@ -263,116 +217,107 @@ body {
 
 <script>
 
-/*
-=========================================
-WORDS USED IN THE HEART
-=========================================
-*/
-
 const words = [
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day",
-    "Have a Great Day"
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri",
+    "HBD Siri"
 ];
-
-/*
-=========================================
-CREATE THE ANIMATED WORDS
-=========================================
-*/
 
 const heart = document.getElementById("heart");
 
@@ -392,11 +337,6 @@ words.forEach((text, index) => {
 
     word.textContent = text;
 
-    /*
-      Every word starts at a different point
-      in the animation.
-    */
-
     const delay = -(index + 1) * 0.22;
 
     horizontal.style.animationDelay =
@@ -406,11 +346,8 @@ words.forEach((text, index) => {
         delay + "s";
 
     horizontal.appendChild(vertical);
-
     vertical.appendChild(word);
-
     item.appendChild(horizontal);
-
     heart.appendChild(item);
 });
 
